@@ -1,5 +1,4 @@
 ARG NODE_VERSION=10.15
-
 FROM node:$NODE_VERSION-alpine
 
 LABEL author="Lucas GILHARD <l.gilhard@gmail.com>"
