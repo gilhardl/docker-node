@@ -1,12 +1,10 @@
-# docker-angular
+# docker-node
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/gilhardl/angular.svg?style=flat-square)](https://hub.docker.com/r/gilhardl/angular/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/gilhardl/node.svg?style=flat-square)](https://hub.docker.com/r/gilhardl/node/)
 
-Docker image for Angular development
+Docker image for Node.js development, mainly used as base image for [gilhardl/angular](https://github.com/gilhardl/docker-angular) and [gilhardl/ionic](https://github.com/gilhardl/docker-ionic)
 
 ----------------------------------------
-
-**Angular CLI :** 7.3.6
 
 **Node.js :** v10.15.3
 
@@ -24,18 +22,8 @@ Docker image for Angular development
 # Usage
 
 ```
-docker run -it --name ANGULAR -v /path/to/your/project:/usr/src/app -p 4200:4200 -p 49153:49153 gilhardl/angular
+docker run -it --name NODEJS -v /path/to/your/project:/usr/src/app gilhardl/node
 ```
-
-### Serving your app
-
-In order to get livereload working, you'll need to define the file watching poll time to 1ms
-
-```
-ng serve --host=0.0.0.0 --poll 1
-```
-
-You need to specify `0.0.0.0` to get access from your host browser
 
 # Licence
 
