@@ -13,7 +13,8 @@ USER root
 RUN apk update \
   && apk upgrade \
   && apk add bash bash-completion \
-  && apk add curl \
+  && apk add curl wget \
+  && apk add python make g++ \
   && rm -rf /tmp/* /var/cache/apk/* \
   && sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd \
   && echo "PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> ~/.bashrc
