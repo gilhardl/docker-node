@@ -31,7 +31,7 @@ RUN npm cache verify \
 # CLEAN UP
 RUN apt-get autoremove -y \
   && apt-get clean -y \
-  && rm -rf /var/lib/apt/lists/*
+  && rm -rf /var/lib/apt/lists/* \
   && rm -rf /tmp/* /var/cache/apt/* \
   && rm -rf ~/.npm
 ENV DEBIAN_FRONTEND=dialog
