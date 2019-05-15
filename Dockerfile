@@ -1,5 +1,5 @@
 ARG NODE_VERSION=lts
-FROM node:$NODE_VERSION-alpine
+FROM node:$NODE_VERSION
 
 LABEL author="Lucas GILHARD <l.gilhard@gmail.com>"
 LABEL description="Docker image for Node.js development"
