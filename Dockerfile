@@ -12,7 +12,7 @@ USER root
 # SYSTEM SETUP
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
-  && apt-get upgrade \
+  && apt-get upgrade -y \
   && apt-get install -y --no-install-recommends apt-utils 2>&1 \
   && apt-get install -y lsb-release \
   && apt-get install -y bash bash-completion \
