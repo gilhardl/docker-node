@@ -4,10 +4,7 @@ FROM node:$NODE_VERSION
 LABEL author="Lucas GILHARD <l.gilhard@gmail.com>"
 LABEL description="Docker image for Node.js development"
 
-WORKDIR /usr/src/app/
-
 USER root
-
    
 # SYSTEM SETUP
 ENV DEBIAN_FRONTEND=noninteractive
