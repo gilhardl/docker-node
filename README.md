@@ -1,6 +1,8 @@
 # docker-node
 
-Docker image for Node.js development, mainly used as base image for [gilhardl/angular](https://github.com/gilhardl/docker-angular) and [gilhardl/ionic](https://github.com/gilhardl/docker-ionic)
+Docker image for Node.js development, mainly used as base image for [gilhardl/angular](https://github.com/gilhardl/docker-angular).
+
+Built to help building Node.JS app on Windows with Docker Desktop to get a fully working Linux development environnement. 
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/gilhardl/node.svg?style=flat-square&label=PULLS)](https://hub.docker.com/r/gilhardl/node/)
 
